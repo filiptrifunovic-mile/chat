@@ -189,6 +189,40 @@
 
     .chat {
       flex: 2;
+
+      .chatInfo {
+        height: 50px;
+        background: #5d5d8d;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: lightgray;
+        padding: 10px;
+      }
+
+      .chatIcons {
+        display: flex;
+        gap: 10px;
+
+        img {
+          height: 24px;
+          cursor: pointer;
+        }
+      }
+
+      .messages {
+        background-color: #ddddf7;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 85%;
+      }
+
+      .input {
+        height: 100%;
+        background-color: white;
+        padding: 10px;
+      }
     }
   }
 }
