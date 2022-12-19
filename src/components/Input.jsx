@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Img from "../img/img.png";
 import Attach from "../img/attach.png";
+import { AuthContext } from "../context/AuthContext";
+import { ChatContext } from "../context/ChatContext";
 
 const Input = () => {
+  const { currentUser } = useContext(AuthContext);
+  const { data } = useContext(ChatContext);
   return (
     <div className="input">
       <input type="text" placeholder="Type something ..." />
